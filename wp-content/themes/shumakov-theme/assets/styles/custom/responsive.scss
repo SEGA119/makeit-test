@@ -1,0 +1,6 @@
+.mobile_only {
+	
+	@media screen and (min-width: $md-min) {
+		display: none;
+	}
+}

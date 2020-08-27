@@ -1,0 +1,70 @@
+h1 {
+	font-size: $h1;
+	margin: 50px auto;
+}
+
+h2 {
+	font-size: $h2;
+	margin: 30px auto;
+}
+
+h3 {
+	font-size: $h3;
+	margin: 24px auto;
+}
+
+h4 {
+	font-size: $h4;
+}
+
+h5 {
+	font-size: $h5;
+}
+
+h6 {
+	font-size: $h6;
+}
+
+p {
+	font-size: $p;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+
+a {
+	@include transition;
+	color: $black;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: $yellow;
+}
+
+
+hr {
+	background-color: #eaeaea;
+	background-color: rgba(51, 51, 51, 0.1);
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.6em;
+}
+ul,
+ol {
+	margin: 0 0 1.6em 1.3333em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+}

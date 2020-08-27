@@ -1,0 +1,35 @@
+.contacts {
+	margin: 0 auto;
+	max-width: 800px;
+//	padding: 70px 0;
+	
+	.row {
+		justify-content: center;
+	}
+	
+	.contacts_block {
+		margin: 0 auto;
+		text-align: center;
+		
+		.contacts_block__image {
+			margin-bottom: 21px;
+		}
+
+		.contacts_block__desc {
+			font-size: 12px;
+			line-height: 22px;
+			
+			a {
+				display: block;
+			}
+		}
+	}
+	
+	@media screen and (max-width: $sm-max) {
+		
+		.contacts_block {
+			margin: 32px 40px;
+//			width: 100%;
+		}
+	}
+}

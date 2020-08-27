@@ -1,0 +1,76 @@
+
+.site-footer {
+	background: $black;
+	color: $white;
+	font-size: 11px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 180px;
+	
+	.container {
+		position: relative;
+	}
+	
+	@media screen and (max-width: $sm-max) { 
+		display: block;
+		height:  auto;
+		padding: 25px 0 40px;
+		text-align: center;
+	}
+}
+
+.site-info {
+	
+	@media screen and (max-width: $sm-max) {
+		width: 100%;
+	}
+}
+
+.site-branding {
+	display: inline-block;
+	margin-right: 23px;
+	
+	@media screen and (max-width: $sm-max) {
+//		text-align: 	
+		width: 100%;
+	}
+}
+
+.copyright {
+	display: inline-block;	
+	
+	@media screen and (max-width: $sm-max) { 
+		margin: 20px auto 35px;
+	}
+}
+
+.scroll_top {
+	cursor: pointer;
+	position: absolute;
+	bottom: 50%;
+	right: 0;
+	padding-right: 15px;
+	transform: translateY(50%);
+	text-transform: uppercase;
+	
+	@include transition;
+	@include after {
+		background: url(../images/arrow.png);
+		height: 14px;
+		width: 21px;
+		position: absolute;
+		right: -8px;
+		top: 0;
+		transform: scale(.48);
+	}	
+	
+	@media screen and (max-width: $defaultContainer) {
+		right: 30px;
+	}
+	
+	@media screen and (max-width: $sm-max) {
+		display: inline-block;
+		position: static;
+	}
+}

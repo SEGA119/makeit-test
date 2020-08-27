@@ -1,0 +1,60 @@
+@mixin clear {
+	&:after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}
+
+@mixin before {
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        @content
+    }
+}
+
+@mixin after {
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        @content
+    }
+}
+
+@mixin backgroundCover {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+@mixin transition {
+	transition: all .4s;
+	
+	&:active {
+		transition: all .2s;
+	}
+}
+
+@mixin filter($color, $alpha) {
+
+  &:after {
+    content: '';
+    background: rgba($color, $alpha);
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }  
+}
